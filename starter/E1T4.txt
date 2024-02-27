@@ -5,3 +5,6 @@ Use S3 bucket to store secret is dangerous. Should use KMS for more security
 
 # Poor practice 2
 Web Service should not be public to reduce risk
+
+# Poor practice 3
+Should not use HTTP (80). Use HTTPS (443) to encrypte data in transit
