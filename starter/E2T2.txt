@@ -1,3 +1,7 @@
 Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
 
 Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+- Security groups should not allow ingress from 0.0.0.0/0 or ::/0 to port 22, 3389
+=> It is recommended that no security group allows unrestricted ingress access to port 22, 3389
+

@@ -1,13 +1,28 @@
 # Identify tools that will allow you to do the following:
 
 ## Scan infrastructure as code templates
+- Terrascan: Terrascan is another open-source tool that detects security vulnerabilities and compliance violations in Infrastructure as Code. It supports Terraform, Kubernetes, Helm, Kustomize, and Docker.
+- tfsec: tfsec is a security scanner specifically for Terraform code. It checks for potential security issues in Terraform scripts.
 
 ### Example vulnerability
+- Terrascan Example vulnerability: detect insecure S3 bucket permissions like granting public read or write access to the bucket.
+- tfsec Example vulnerability: detect potential security issues like using insecure configurations or exposing sensitive information.
+
 
 ##Scan AMI’s or containers for OS vulnerabilities
+- Trivy: A simple and comprehensive vulnerability scanner for containers and other artifacts, suitable for CI.
+- Snyk: A tool that finds and fixes vulnerabilities for npm, Maven, NuGet, RubyGems, PyPi and much more. It integrates with existing workflows to provide vulnerability scanning for containers and AMIs.
 
 ### Example vulnerability
+- Trivy Example vulnerability: detect outdated packages or known CVEs.
+- Snyk Example vulnerability: identify vulnerabilities in dependencies.
+
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
+- AWS Config: This service continuously monitors and records AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations.
+- Chef InSpec: An open-source framework for testing and auditing applications and infrastructure. InSpec can be used to test cloud resources for compliance post-deployment.
 
 ### Example vulnerability
+- AWS Config Example vulnerability: non-compliant open security groups or unencrypted S3 buckets.
+- Chef InSpec Example vulnerability: insecure network access rules.
+

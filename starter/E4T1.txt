@@ -1,5 +1,10 @@
 
 
 # Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+- Use IAM (Identity and Access Management) policies to restrict access based on roles, permissions, and IP whitelisting
+- Encrypt the data stored in the S3 bucket using server-side encryption
+- Remove inbound rule from 0.0.0.0/0, limit access to DevOps, IT only
 
 # Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+- Implement IAM roles and policies: ensure that the instances did not have access to the secret recipes bucket by not assigning them the necessary permissions
+- Implement access controls: using bucket policies, IAM policies, or access control lists (ACLs) to limit access only to authorized users or roles
